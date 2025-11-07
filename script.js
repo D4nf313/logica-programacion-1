@@ -5,13 +5,11 @@ function ordenarNumeros() {
 
       let resultado = document.getElementById("resultado");
 
-      // Validar números
       if (isNaN(num1) || isNaN(num2) || isNaN(num3)) {
         resultado.innerHTML = "<p style='color:red;'>Por favor ingresa solo números válidos.</p>";
         return;
       }
 
-      // Verificar si todos son iguales
       if (num1 === num2 && num2 === num3) {
         resultado.innerHTML = `<p>Los tres números son iguales: ${num1}, ${num2}, ${num3}</p>`;
         return;
@@ -19,7 +17,6 @@ function ordenarNumeros() {
 
       let mayor, medio, menor;
 
-      // Comparaciones básicas
       if (num1 >= num2 && num1 >= num3) {
         mayor = num1;
         if (num2 >= num3) {
